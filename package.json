@@ -1,0 +1,41 @@
+{
+  "name": "babel-demo",
+  "version": "1.0.0",
+  "description": "babel webpack node cli",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack/webpack.config.js --mode=development",
+    "generator": "node core/generator.js",
+    "parser": "node core/parser.js",
+    "transform": "node core/transform.js",
+    "transformAst": "node core/transformAst.js",
+    "babel-cli": "babel nodejs/es6+.js --out-file nodejs/es6+-compiled.js -s true --retain-lines --minified",
+    "babel-node": "babel-node nodejs/es6+.js",
+    "babel-register": "node nodejs/register.js",
+    "node-cli": "node nodejs/es6+.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/generator": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/parser": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-syntax-bigint": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7",
+    "@babel/runtime": "^7.7.7",
+    "@babel/runtime-corejs3": "^7.7.7",
+    "@babel/traverse": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.6.1",
+    "webpack": "^4.41.4"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.10"
+  }
+}

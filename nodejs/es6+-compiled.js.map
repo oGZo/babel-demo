@@ -1,0 +1,1 @@
+{"version":3,"sources":["es6+.js"],"names":[],"mappings":"mcAAe,CAAA,C,gIAAf;AACI,OAAO,CAAC,GAAR,CAAY,CAAZ,EADJ,qD;;AAGA,CAAC,aAAD,CAAY,UAAM;AACd,OAAO,CAAC,GAAR,CAAY,SAAZ;AACH,CAFD","file":"es6+-compiled.js","sourcesContent":["async function b(){\n    console.log(1);\n}\na().finally(() => {\n    console.log('finally');\n})"]}
